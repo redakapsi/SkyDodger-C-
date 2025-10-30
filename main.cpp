@@ -76,8 +76,7 @@ void draw()
                     printed = false;
                 }
 
-                for (auto &f : food)
-                    if (f.first == x_pos && f.second == y_pos)
+                    if (xfood == x_pos && yfood == y_pos)
                     {
                         cout << "S";
                         printed = false;
@@ -176,6 +175,7 @@ void logic()
     {
         xfood = rand() % (width - 3) + 1;
         yfood = 1;
+
     }
 
  
